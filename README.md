@@ -1,4 +1,3 @@
-This project was bootstrapped with download app.
 
 ## Available Scripts
 
