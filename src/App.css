@@ -1,0 +1,109 @@
+.slider {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in .1s;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  z-index: 999;
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  z-index: 999;
+ 
+}
+
+.fa-arrow-right:before, .fa-arrow-left:before {
+  color: #222
+}
+
+.prev-button {
+  background-image: url(https://s3-ap-southeast-1.amazonaws.com/he-public-data/Left%20Control577660a.png);
+  background-size: 100%;
+  background-color:white;
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+ .next-button {
+  background-image: url(https://s3-ap-southeast-1.amazonaws.com/he-public-data/Right%20Control3fc6d2d.png);
+  background-size: 100%;
+  background-color:white;
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+.buttons-wrapper button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 15px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
